@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unfinished SMP Item Price Codex</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <h1>Item Price Codex</h1>
+            <div class="controls">
+                <input type="text" id="searchInput" placeholder="Search items...">
+                <select id="categorySelect">
+                    <option value="All">All Categories</option>
+                </select>
+                <div class="qty-wrapper">
+                    <input type="number" id="quantityInput" value="1" min="1">
+                    <span>Qty</span>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('codex')">Item Price Codex</button>
+            <button class="tab-btn" onclick="switchTab('engine')">Price Calculator / Item Flipper</button>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div id="codex" class="tab-content active">
+            <div class="grid" id="codexGrid"></div>
+        </div>
+
+        <div id="engine" class="tab-content">
+            <div class="grid" id="engineGrid"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
